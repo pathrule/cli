@@ -1,9 +1,17 @@
 {
   "name": "@pathrule/cli",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Pathrule CLI",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://pathrule.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pathrule/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pathrule/cli/issues"
+  },
   "bin": {
     "pathrule": "dist/index.js"
   },
