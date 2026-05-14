@@ -1,0 +1,22 @@
+{
+  "name": "@pathrule/cli",
+  "version": "0.0.2",
+  "description": "Pathrule CLI",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "pathrule": "dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.11.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
