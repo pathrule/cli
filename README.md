@@ -104,11 +104,10 @@ pathrule doctor
 
 Notes:
 
-- Windows autostart for the bridge daemon is intentionally deferred for
-  M41 — start it manually with `pathrule daemon start`. `pathrule daemon
-  status --json` reports `supported: false, method: "task-scheduler",
-  reason: "deferred (M41): …"` so scripts can distinguish a planned
-  no-op from a real failure.
+- Windows autostart for the bridge daemon is not yet wired up. Start
+  it manually with `pathrule daemon start`. `pathrule daemon status
+  --json` reports `supported: false, method: "task-scheduler"` so
+  scripts can distinguish a planned no-op from a real failure.
 - The CLI writes a `pathrule-hook.cmd` shim next to `pathrule-hook.js`
   inside `%USERPROFILE%\.pathrule\bin\`. AI clients that spawn hooks
   without a shell (Codex on Windows) execute the `.cmd` directly.
@@ -162,12 +161,5 @@ repository:
   security.
 - The local bridge binds to loopback and is intended for local browser and CLI
   workflows only.
-
-## Troubleshooting and Release Operations
-
-- Cross-platform troubleshooting:
-  [docs/cli/troubleshooting.md](../../docs/cli/troubleshooting.md)
-- Release operator checklist (canary → promote → rollback):
-  [docs/cli/release-checklist.md](../../docs/cli/release-checklist.md)
 
 For more details, visit [pathrule.io](https://pathrule.io).
