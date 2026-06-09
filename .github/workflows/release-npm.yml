@@ -33,4 +33,4 @@ jobs:
           test "$PACKAGE_VERSION" = "$TAG_VERSION"
 
       - name: Publish to npm
-        run: npm publish --access public
+        run: npm publish --access public --provenance
